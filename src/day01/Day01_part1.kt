@@ -1,3 +1,7 @@
+package day01
+
+import readInput
+
 fun String.getFirstDigit(): Char? {
     for (ch in this) {
         if (ch.isDigit()) return ch
@@ -18,11 +22,7 @@ fun String.getCalibrationValue():Int {
 
 fun main() {
     val input = readInput("day01/Day01")
-    var sum = 0
-
-    for (item in input) {
-        sum += item.getCalibrationValue()
-    }
+    val sum = input.sumOf { it.getCalibrationValue() }
 
     print(sum)
 }
