@@ -42,8 +42,8 @@ fun String.getCalibrationValueWithSpelledOutNum(): Int {
 
     val numIndexes = nums.map { it["index"] ?: -1 }
 
-    val firstNum = nums.filter { it["index"] == numIndexes.min() }[0]["num"]
-    val lastNum = nums.filter { it["index"] == numIndexes.max() }[0]["num"]
+    val firstNum = nums.first { it["index"] == numIndexes.min() }["num"]
+    val lastNum = nums.last { it["index"] == numIndexes.max() }["num"]
 
     return "$firstNum$lastNum".toInt()
 }
