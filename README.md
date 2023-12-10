@@ -1,6 +1,6 @@
 # Advent of Code 2023 Kotlin
 
-Welcome to the Advent of Code[^aoc] Kotlin project using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
+Welcome to the Advent of Code[^aoc] Kotlin project generated using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
 
 [^aoc]:
     [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
